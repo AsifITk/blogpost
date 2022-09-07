@@ -6,7 +6,7 @@
 
 dosomething = async (id) => {
     console.log(id);
-    await fetch('http://localhost:8000/' + id).then(function (response) {
+    await fetch('/' + id).then(function (response) {
         // The API call was successful!
         return response.json();
     }).then(function (data) {

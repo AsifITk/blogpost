@@ -36,7 +36,7 @@ app.get("/:id", async (req, res) => {
     // console.log(articles)
     // res.render("articles", { articles });
 });
-app.listen(8000);
+app.listen(process.env.PORT || 8000);;
 // < !--title
 // body
 // author

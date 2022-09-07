@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/script.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Best vlox ever</h1>
+    <Button class="add-btn"> <a href="./new">Add New Post</a> </Button>
+    <div>
+      <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deserunt -->
+    </div>
+    <% articles.forEach((article)=>{%>
+    <div class="card">
+      <h2><%= article.title %></h2>
+      <p><%= article.name1 %></p>
+      <h5><%= article.date %></h5>
+      <p><%= article.content %></p>
+      <button onclick="dosomething(`<%= article._id %>`)">Delete</button>
+    </div>
+    <%})%>
+  </body>
+</html>
